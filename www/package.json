@@ -1,0 +1,28 @@
+{
+  "name": "ts-schedule",
+  "version": "1.0.0",
+  "version_comment": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "window": {
+    "icon": "",
+    "toolbar": true,
+    "width": 1024,
+    "height": 768,
+    "position": "center",
+    "fullscreen": false,
+    "frame": true,
+    "min_width": 900,
+    "min_height": 600
+  },
+  "main": "app/index.html",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "nw:sql32":"npm i sqlite3 --build-from-source --runtime=node-webkit --target_arch=ia32 --target=0.12.3",
+    "start": "webpack-dev-server --content-base dist/ --inline "
+  }
+}
